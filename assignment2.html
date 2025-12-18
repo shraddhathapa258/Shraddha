@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+            
+        }
+        table {
+            border-collapse: collapse;
+            border: 3px solid #d4f5f7;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid  #004d40;;
+            padding: 14px 20px;
+            text-align: center;
+        }
+        th {
+            background-color: #d4f5f7;
+            color: #004d40;
+            font-weight: bold;
+        }
+        tr:nth-child(odd) td { 
+            /* yes ley content dekhi row ma background color dinxa odd row ma */
+            background-color: #a1e1de;
+        }
+    
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption> Students info</caption> <!-- table name -->
+       
+        
+        <tr>
+            <th rowspan="2">ID</th> <!-- yo row ley 2 ta cell linxa  -->
+            
+            <th colspan="2">Full Name</th>
+            <th rowspan="2">Department</th>
+        </tr>
+        <tr>
+          
+            <th>First</th>
+            <th>Last</th>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td>Shraddha</td>
+            <td>Thapa</td>
+            <td>Csit</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Sadikshya</td>
+            <td>Shrestha</td>
+            <td>Csit</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Soni</td>
+            <td>Panta</td>
+            <td>Csit</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td> Kanchan</td>
+            <td>Tamang</td>
+            <td>Architecture</td>
+        </tr>
+      
+    </table>
+
+</body>
+</html>
